@@ -1,7 +1,7 @@
 # For Emacs: -*- mode:cperl; mode:folding; coding:utf-8; -*-
 
 package Lingua::EUS::Numbers;
-# ABSTRACT: This module converts numbers (cardinals and ordinals) into their Bask (Euskara) equivalents.
+# ABSTRACT: Number 2 word conversion in EUS.
 
 # {{{ use block
 
@@ -19,8 +19,7 @@ require Exporter;
 
 @ISA     = qw(Exporter);
 
-my($ver)  = ( '$Rev: 440 $' =~ m{(\d+)}xms);
-$VERSION = $ver / 10_000;
+$VERSION = 0.0577;
 
 @EXPORT_OK = qw(
   %num2alpha
@@ -270,7 +269,7 @@ Lingua::EUS::Numbers - Converts numbers into Bask (Euskara).
 
 =head1 VERSION
 
-version 0.044
+version 0.0577
 
 =head1 SYNOPSIS
 
@@ -281,6 +280,8 @@ version 0.044
   print "The ordinal value of $number is " . ordinal2alpha($number) . " in Euskara.\n";
 
 =head1 DESCRIPTION
+
+Number 2 word conversion in EUS.
 
 This module converts numbers (cardinals and ordinals) into their Bask (Euskara)
 equivalents.  It accepts positive integers up to, but not including, 1 trillion.
