@@ -5,6 +5,8 @@ package Lingua::EUS::Numbers;
 
 # {{{ use block
 
+use 5.10.1;
+
 use warnings;
 use strict;
 use Carp;
@@ -19,7 +21,7 @@ require Exporter;
 
 @ISA     = qw(Exporter);
 
-$VERSION = 0.0577;
+$VERSION = 0.0682;
 
 @EXPORT_OK = qw(
   %num2alpha
@@ -269,7 +271,7 @@ Lingua::EUS::Numbers - Converts numbers into Bask (Euskara).
 
 =head1 VERSION
 
-version 0.0577
+version 0.0682
 
 =head1 SYNOPSIS
 
